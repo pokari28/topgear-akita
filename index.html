@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b63ce">
+<title>クルマの困った！を、すぐそばで。｜トップギア 秋田営業所</title>
+<meta name="description" content="事故・故障・バッテリー・パンク・脱輪など、クルマの困ったときに。トップギア秋田営業所のロードサービス相談サイト。">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#top" aria-label="トップギア">
+    <img src="images/logo.jpg" alt="Top Gear">
+    <span><b class="brand-title">秋田・新庄レスキューセンター</b><small>TOP GEAR / ロードサービス24レッカー</small></span>
+  </a>
+  <nav class="desktop-nav">
+    <a href="#guide">まず、どう頼む？</a><a href="#services">できること</a><a href="#cases">対応事例</a><a href="#area">対応エリア</a>
+  </nav>
+  <div class="head-actions">
+    <a class="head-phone" href="#guide">電話する</a>
+    <a class="head-line" href="#line">LINEで相談</a>
+  </div>
+</header>
+<main id="top">
+<section class="hero">
+  <img class="hero-img" src="images/hero.jpg" alt="ロードサービスの現場">
+  <div class="hero-shade"></div>
+  <div class="hero-copy">
+    <p class="eyebrow">秋田県・山形県 / 24時間365日</p>
+    <div class="emergency-badge">事故・故障のあった方は、まずご相談ください</div>
+    <h1>クルマの困った！を、<br><strong>すぐそばで。</strong></h1>
+    <p>事故・故障・バッテリー・パンク・脱輪など。<br><strong>まずは、ここにお電話ください。</strong></p>
+    <div class="hero-buttons">
+      <a class="btn btn-red" href="#guide">☎ 電話で相談する</a>
+      <a class="btn btn-green" href="#line">LINEで相談する</a>
+    </div>
+  </div>
+</section>
+<section id="guide" class="section guide-section">
+  <div class="section-head">
+    <p class="kicker">FOR ACCIDENT / TROUBLE</p>
+    <h2>事故・故障のあった方へ<br>お怪我はありませんでしょうか？</h2>
+    <p>分かる範囲で確認してから、担当窓口へお電話ください。</p>
+  </div>
+  <div class="guide-panel">
+    <div class="progress"><span class="active"></span><span></span><span></span><span></span></div>
+    <div class="question active-question"><div class="q-num">01</div><h3>どちらでお困りですか？</h3>
+      <div class="choice-grid">
+        <button data-region="秋田市">秋田市</button><button data-region="能代市">能代市</button>
+        <button data-region="横手市">横手市</button><button data-region="湯沢市">湯沢市</button>
+        <button data-region="大仙市">大仙市</button><button data-region="新庄市">新庄市</button>
+        <button data-region="その他">その他</button>
+      </div>
+    </div>
+    <div class="question"><div class="q-num">02</div><h3>車の保険に入っていますか？</h3>
+      <div class="choice-grid two">
+        <button data-insurance="入っている">入っている</button>
+        <button data-insurance="分からない">分からない</button>
+        <button data-insurance="入っていない">入っていない</button>
+      </div>
+    </div>
+    <div class="question"><div class="q-num">03</div><h3>どんなことでお困りですか？</h3>
+      <p class="multi-note">複数選択できます</p>
+      <div class="choice-grid">
+        <button data-trouble="事故">事故</button><button data-trouble="故障">故障</button>
+        <button data-trouble="バッテリー">バッテリー</button><button data-trouble="パンク">パンク</button>
+        <button data-trouble="脱輪・スタック">脱輪・スタック</button><button data-trouble="ガス欠">ガス欠</button>
+        <button data-trouble="鍵">鍵</button><button data-trouble="その他">その他</button>
+      </div>
+    </div>
+    <div class="question"><div class="q-num">04</div><h3>現在地は分かりますか？</h3>
+      <div class="location-box"><label>住所・道路名・近くの施設など</label>
+      <input id="location" placeholder="例：秋田市〇〇町"></div>
+    </div>
+    <div class="result-box" id="resultBox">
+      <h3>準備できましたか？</h3>
+      <div class="result-tags"><span id="tagRegion">秋田市</span><span id="tagInsurance">保険未選択</span><span id="tagTrouble">トラブル未選択</span></div>
+      <a class="big-call" id="callLink" href="tel:0188274945"><span>☎</span><div><small>秋田営業所</small><b>018-827-4945</b></div></a>
+      <button class="restart" id="restart">最初からやり直す</button>
+    </div>
+    <div class="guide-controls">
+      <button id="back" class="back" disabled>← 戻る</button>
+      <button id="next" class="next">次へ進む →</button>
+    </div>
+  </div>
+</section>
+<section id="line" class="section">
+  <p class="kicker">LINE CONSULTATION</p>
+  <h2>電話で説明するのが<br><strong>難しい方へ。</strong></h2>
+  <p>LINEなら、写真を送って状況を伝えられます。</p>
+  <button class="line-btn" id="lineBtn">LINE相談先を設定する →</button>
+</section>
+<section id="services" class="section">
+  <p class="kicker">WHAT WE CAN DO</p>
+  <h2>困ったとき、<em>私たちにできること。</em></h2>
+  <div class="service-list">
+    <article><div><h3>事故</h3><p>事故現場からの搬送・救援。</p></div></article>
+    <article><div><h3>故障</h3><p>走行できないトラブルに。</p></div></article>
+    <article><div><h3>バッテリー</h3><p>突然のバッテリー上がりに。</p></div></article>
+    <article><div><h3>パンク</h3><p>走行が難しいときに。</p></div></article>
+    <article><div><h3>脱輪・スタック</h3><p>雪道・ぬかるみなどからの救援。</p></div></article>
+    <article><div><h3>ガス欠・鍵</h3><p>燃料切れや鍵のトラブルにも。</p></div></article>
+  </div>
+</section>
+<section id="area" class="area-section">
+  <div class="area-content">
+    <p class="kicker">AKITA AREA</p>
+    <h2>担当窓口を探せます。</h2>
+    <div class="area-grid">
+      <button data-area="秋田市"><b>秋田市</b><small>018-827-4945</small></button>
+      <button data-area="能代市"><b>能代市</b><small>0185-53-4951</small></button>
+      <button data-area="横手市"><b>横手市</b><small>0182-32-4955</small></button>
+      <button data-area="湯沢市"><b>湯沢市</b><small>0183-56-7155</small></button>
+      <button data-area="大仙市"><b>大仙市</b><small>0187-73-7550</small></button>
+      <button data-area="新庄市"><b>新庄市</b><small>0233-25-4911</small></button>
+    </div>
+    <div class="area-result" id="areaResult">地域を選択すると窓口情報を表示します。</div>
+  </div>
+</section>
+<section class="final-cta">
+  <div class="final-copy">
+    <h2>困ったときは、<br><strong>まずご相談ください。</strong></h2>
+    <div class="hero-buttons">
+      <a class="btn btn-red" href="#guide">☎ 電話で相談する</a>
+      <a class="btn btn-green" href="#line">LINEで相談する</a>
+    </div>
+  </div>
+</section>
+</main>
+<div class="mobile-bar"><a href="#guide" class="m-phone">☎ 電話する</a><a href="#line" class="m-line">LINEで相談</a></div>
+<script src="app.js"></script>
+</body>
+</html>
